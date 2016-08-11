@@ -2,12 +2,23 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
+import {TestPage} from './pages/test/test';
+import {AlertPage} from './pages/alert/alert';
+import {ButtonTestPage} from './pages/button-test/button-test';
+import {CardTestPage} from './pages/card-test/card-test';
+import {IconTestPage} from './pages/icon-test/icon-test';
 
 @Component({
   templateUrl: 'build/app.html'
 })
 export class MyApp {
   home: any = HomePage;
+  test: any = TestPage;
+  alert: any = AlertPage;
+  button: any = ButtonTestPage;
+  card: any = CardTestPage;
+  icon: any = IconTestPage;
+
   rootPage: any = this.home;
 
   constructor(platform: Platform) {
